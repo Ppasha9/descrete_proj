@@ -13,10 +13,27 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Graph">
+      <UniqueIdentifier>{b5c0d04c-3c9c-414c-be22-ddd0044fbcfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Support">
+      <UniqueIdentifier>{241fbf35-8740-48f0-a215-4281e2da62fe}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graph\graph.h">
+      <Filter>Source Files\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="support\support.h">
+      <Filter>Source Files\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="support\vec2d.h">
+      <Filter>Source Files\Support</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
