@@ -7,11 +7,11 @@
  * LAST UPDATE: 19.05.2018
  * NOTE: graph class declaration file
  */
-
+#pragma once
 #include <vector>
 
 /* Graph class */
-template<class GraphElem>
+template<class GraphElem, typename WeightT = float>
 class Graph
 {
 public:
@@ -34,7 +34,14 @@ public:
     _matrix[Id1][Id2] = true;
     _matrix[Id2][Id1] = true;
   } /* End of 'addLink' function */
-
+  WeightT getWeight(int start, int end) const 
+  {
+    return _elements[start].getWeight(_elements[end]);
+  }
+  const std::vector<GraphElem>& getElements() const 
+  {
+    return _elements;
+  }
 private:
   /* Array of elements */
   std::vector<GraphElem> _elements;

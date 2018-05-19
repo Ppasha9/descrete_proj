@@ -7,7 +7,7 @@
  * LAST UPDATE: 19.05.2018
  * NOTE: support class declaration file
  */
-
+#pragma once
 #include "vec2d.h"
 
 /* Support namespace */
