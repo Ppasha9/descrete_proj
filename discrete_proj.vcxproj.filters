@@ -19,6 +19,12 @@
     <Filter Include="Source Files\Support">
       <UniqueIdentifier>{241fbf35-8740-48f0-a215-4281e2da62fe}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Motion planning">
+      <UniqueIdentifier>{28ea2801-3f13-4b4f-8edd-c67eb4c9a5fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Motion planning\Math types">
+      <UniqueIdentifier>{9101fde4-3cc1-4068-be02-339c4c6d3c87}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -34,6 +40,9 @@
     </ClInclude>
     <ClInclude Include="support\vec2d.h">
       <Filter>Source Files\Support</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_planning\math_types\vertex.h">
+      <Filter>Source Files\Motion planning\Math types</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

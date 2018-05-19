@@ -150,6 +150,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="graph\graph.h" />
+    <ClInclude Include="motion_planning\math_types\vertex.h" />
     <ClInclude Include="support\support.h" />
     <ClInclude Include="support\vec2d.h" />
   </ItemGroup>
