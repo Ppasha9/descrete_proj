@@ -20,6 +20,7 @@ public:
   {
   } /* End of constructor */
 
+  Vertex(sup::Vecf pos) : _pos(pos), _id(0) {}
   /* Getting id function */
   int getId(void) const
   {
@@ -44,8 +45,23 @@ public:
     _pos = Pos;
   } /* End of 'setPos' function */
 
+  const std::vector<int> &getNeighbors() const
+  {
+    return _neighbors;
+  }
+
+  int getWeight(const Vertex &v) const
+  {
+    return _pos.length(v._pos);
+  }
+
+  const sup::Vecf& getPos() const
+  {
+    return _pos;
+  }
 private:
   sup::Vecf _pos;
+  std::vector<int> _neighbors;
   int _id;
 }; /* End of 'Vertex' class */
 

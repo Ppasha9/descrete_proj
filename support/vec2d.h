@@ -11,6 +11,7 @@
 #pragma once
 #include <initializer_list>
 
+#pragma once
 /* Support namespace */
 namespace sup
 {
@@ -32,6 +33,17 @@ namespace sup
         _coords[i] = (Type)*it;
     } /* End of 'Vector' function */
 
+    Vec2D(Type x, Type y) : _x(x), _y(y) {}
+    bool operator== (Vec2D p) const
+    {
+      if (_x != p._x || _y != p._y)
+        return false;
+      return true;
+    }
+    float length(Vec2D p) const
+    {
+      return sqrt((_x - p._x) * (_x - p._x) + (_y * p._y) * (_y * p._y));
+    }
     // TODO: all mafacka
   }; /* End of 'Vec2D' class */
 } /* end of 'sup' namespace */

@@ -36,6 +36,8 @@
     </Filter>
     <Filter Include="Source Files\Motion planning\Input">
       <UniqueIdentifier>{8a64aa3c-36e8-498e-854b-bf07063c88d4}</UniqueIdentifier>
+    <Filter Include="Source Files\DijkstraAlg">
+      <UniqueIdentifier>{16937fba-4064-4506-b344-e03af20397d8}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,6 +58,8 @@
     </ClCompile>
     <ClCompile Include="motion_planning\input\motion_planning_input.cpp">
       <Filter>Source Files\Motion planning\Input</Filter>
+    <ClCompile Include="dijkstra.cpp">
+      <Filter>Source Files\DijkstraAlg</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
