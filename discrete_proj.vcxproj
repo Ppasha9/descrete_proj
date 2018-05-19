@@ -89,10 +89,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Павел\Desktop\WORK\TGRKIT\INCLUDE</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Павел\Desktop\WORK\TGRKIT\LIB</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -103,10 +105,12 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Павел\Desktop\WORK\TGRKIT\INCLUDE</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\Павел\Desktop\WORK\TGRKIT\LIB</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,11 +150,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="anim\anim.cpp" />
+    <ClCompile Include="anim\render\render.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="motion_planning\input\motion_planning_input.cpp" />
+    <ClCompile Include="motion_planning\math_types\polygon.cpp" />
+    <ClCompile Include="motion_planning\motion_planning.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="anim\anim.h" />
+    <ClInclude Include="anim\render\drawable\drawable.h" />
+    <ClInclude Include="anim\render\render.h" />
     <ClInclude Include="graph\graph.h" />
+    <ClInclude Include="motion_planning\input\motion_planning_input.h" />
+    <ClInclude Include="motion_planning\math_types\polygon.h" />
     <ClInclude Include="motion_planning\math_types\vertex.h" />
+    <ClInclude Include="motion_planning\motion_planning.h" />
     <ClInclude Include="support\support.h" />
     <ClInclude Include="support\vec2d.h" />
   </ItemGroup>

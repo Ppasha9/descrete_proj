@@ -8,6 +8,7 @@
  * NOTE: support class declaration file
  */
 
+#pragma once
 #include "vec2d.h"
 
 /* Support namespace */

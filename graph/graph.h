@@ -8,6 +8,7 @@
  * NOTE: graph class declaration file
  */
 
+#pragma once
 #include <vector>
 
 /* Graph class */

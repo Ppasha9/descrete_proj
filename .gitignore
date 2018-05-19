@@ -2,3 +2,5 @@
 *.db
 *.opendb
 *.suo
+Debug/*
+x64/*

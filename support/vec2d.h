@@ -8,6 +8,9 @@
  * NOTE: two-dimenshional vector class declaration file
  */
 
+#pragma once
+#include <initializer_list>
+
 /* Support namespace */
 namespace sup
 {
@@ -15,11 +18,20 @@ namespace sup
   template<typename Type>
   class Vec2D
   {
-  private:
+  public:
     /* Vector components */
-    Type _x, _y;
+    Type _coords[2];
 
   public:
+    /* Constructor with all set params */
+    template <typename DType>
+    Vec2D(const std::initializer_list<DType> &Init)
+    {
+      size_t i = 0;
+      for (auto it = Init.begin(); it != Init.end(); it++, i++)
+        _coords[i] = (Type)*it;
+    } /* End of 'Vector' function */
+
     // TODO: all mafacka
   }; /* End of 'Vec2D' class */
 } /* end of 'sup' namespace */

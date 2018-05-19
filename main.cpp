@@ -10,12 +10,14 @@
  * NOTE: main project file
  */
 
-#include <iostream>
+#include "anim\anim.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
-  std::cout << "Hui!" << std::endl;
+  anim::Anim &anim = anim::Anim::getInstance();
+  anim.init(argc, argv, 600, 600);
+  anim.run();
   return 0;
-}
+} /* End of 'main' function */
 
 /* END OF 'main.cpp' FILE */
