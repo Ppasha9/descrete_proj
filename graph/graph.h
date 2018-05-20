@@ -8,10 +8,12 @@
  * LAST UPDATE: 19.05.2018
  * NOTE: graph class declaration file
  */
+
 #pragma once
 #include <vector>
 
 /* Graph class */
+template<class GraphElem>
 template<class GraphElem, typename WeightT = float>
 class Graph
 {
@@ -29,6 +31,7 @@ public:
     _elements[Id1].addNeighbor(Id2);
     _elements[Id2].addNeighbor(Id1);
   } /* End of 'addLink' function */
+
   WeightT getWeight(int start, int end) const 
   {
     return _elements[start].getWeight(_elements[end]);

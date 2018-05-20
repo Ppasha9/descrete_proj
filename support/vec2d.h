@@ -8,6 +8,10 @@
  * LAST UPDATE: 19.05.2018
  * NOTE: two-dimenshional vector class declaration file
  */
+
+#pragma once
+#include <initializer_list>
+
 #pragma once
 /* Support namespace */
 namespace sup
@@ -17,18 +21,30 @@ namespace sup
   class Vec2D
   {
   public:
-    Type _x, _y;
+    /* Vector components */
+    Type _coords[2];
+
     Vec2D() {}
-    Vec2D(Type x, Type y) : _x(x), _y(y) {}
+  public:
+    /* Constructor with all set params */
+    template <typename DType>
+    Vec2D(const std::initializer_list<DType> &Init)
+    {
+      size_t i = 0;
+      for (auto it = Init.begin(); it != Init.end(); it++, i++)
+        _coords[i] = (Type)*it;
+    } /* End of 'Vector' function */
+
+    Vec2D(Type x, Type y) : _coords[0](x), _coords[1](y) {}
     bool operator== (Vec2D p) const
     {
-      if (fabs(_x - p._x) > eps || fabs(_y - p._y) > eps)
+      if (fabs(_coords[0] - p._coords[0]) > eps || fabs(_coords[1] - p._coords[1]) > eps)
         return false;
       return true;
     }
     float length(Vec2D p) const
     {
-      return sqrt((_x - p._x) * (_x - p._x) + (_y - p._y) * (_y - p._y));
+      return sqrt((_coords[0] - p._coords[0]) * (_coords[0] - p._coords[0]) + (_coords[1] - p._coords[1]) * (_coords[1] - p._coords[1]));
     }
     // TODO: all mafacka
   }; /* End of 'Vec2D' class */

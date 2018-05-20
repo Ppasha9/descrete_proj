@@ -25,6 +25,17 @@
     <Filter Include="Source Files\Motion planning\Math types">
       <UniqueIdentifier>{9101fde4-3cc1-4068-be02-339c4c6d3c87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Anim">
+      <UniqueIdentifier>{765f1671-5cfb-4d86-b630-4e3e1ebdc557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Anim\Render">
+      <UniqueIdentifier>{38ba8a58-4e9b-468d-aebc-b04456d48c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Anim\Render\Drawable">
+      <UniqueIdentifier>{cfe42743-8542-4786-a600-ed7012345644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Motion planning\Input">
+      <UniqueIdentifier>{8a64aa3c-36e8-498e-854b-bf07063c88d4}</UniqueIdentifier>
     <Filter Include="Source Files\DijkstraAlg">
       <UniqueIdentifier>{16937fba-4064-4506-b344-e03af20397d8}</UniqueIdentifier>
     </Filter>
@@ -33,6 +44,20 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="anim\anim.cpp">
+      <Filter>Source Files\Anim</Filter>
+    </ClCompile>
+    <ClCompile Include="anim\render\render.cpp">
+      <Filter>Source Files\Anim\Render</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_planning\math_types\polygon.cpp">
+      <Filter>Source Files\Motion planning\Math types</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_planning\motion_planning.cpp">
+      <Filter>Source Files\Motion planning</Filter>
+    </ClCompile>
+    <ClCompile Include="motion_planning\input\motion_planning_input.cpp">
+      <Filter>Source Files\Motion planning\Input</Filter>
     <ClCompile Include="dijkstra.cpp">
       <Filter>Source Files\DijkstraAlg</Filter>
     </ClCompile>
@@ -52,6 +77,23 @@
     </ClInclude>
     <ClInclude Include="dijkstra.h">
       <Filter>Source Files\DijkstraAlg</Filter>
+    <ClInclude Include="anim\anim.h">
+      <Filter>Source Files\Anim</Filter>
+    </ClInclude>
+    <ClInclude Include="anim\render\render.h">
+      <Filter>Source Files\Anim\Render</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_planning\math_types\polygon.h">
+      <Filter>Source Files\Motion planning\Math types</Filter>
+    </ClInclude>
+    <ClInclude Include="anim\render\drawable\drawable.h">
+      <Filter>Source Files\Anim\Render\Drawable</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_planning\motion_planning.h">
+      <Filter>Source Files\Motion planning</Filter>
+    </ClInclude>
+    <ClInclude Include="motion_planning\input\motion_planning_input.h">
+      <Filter>Source Files\Motion planning\Input</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

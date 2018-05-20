@@ -16,8 +16,9 @@
 #include "support\support.h"
 #include "support\vec2d.h"
 #include "dijkstra.h"
+#include "anim\anim.h"
 
-int main(void)
+int main(int argc, char **argv)
 {
   Graph<Vertex> gr;
   gr.addElem(Vertex(sup::Vecf(0.1, 0.1)));
@@ -38,6 +39,6 @@ int main(void)
   std::vector<Vertex> came_from = Dijkstra::GetAllWays(gr.getElements()[0], gr, 0.1);
   std::cout << "Hui!" << std::endl;
   return 0;
-}
+} /* End of 'main' function */
 
 /* END OF 'main.cpp' FILE */

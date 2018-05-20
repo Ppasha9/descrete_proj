@@ -8,6 +8,7 @@
  * LAST UPDATE: 19.05.2018
  * NOTE: vectex class declaration file
  */
+
 #pragma once
 #include "../../support/support.h"
 
@@ -15,6 +16,11 @@
 class Vertex
 {
 public:
+  /* Class consturctor */
+  Vertex(const sup::Vecf &Pos) : _id(0), _pos(Pos)
+  {
+  } /* End of constructor */
+
   Vertex(sup::Vecf pos) : _pos(pos), _id(0) {}
   Vertex() {}
   /* Getting id function */
@@ -28,6 +34,18 @@ public:
   {
     _id = ID;
   } /* End of 'setId' function */
+
+  /* Getting position function */
+  sup::Vecf getPos(void) const
+  {
+    return _pos;
+  } /* End of 'getPos' function */
+
+  /* Setting position function */
+  void setPos(const sup::Vecf &Pos)
+  {
+    _pos = Pos;
+  } /* End of 'setPos' function */
 
   const std::vector<int> &getNeighbors() const
   {
