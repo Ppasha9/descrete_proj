@@ -4,6 +4,7 @@
  * FILE: vertex.h
  * AUTHORS:
  *   Denisov Pavel
+ *   Tunikov Dmitrii
  * LAST UPDATE: 19.05.2018
  * NOTE: vectex class declaration file
  */
@@ -21,6 +22,7 @@ public:
   } /* End of constructor */
 
   Vertex(sup::Vecf pos) : _pos(pos), _id(0) {}
+  Vertex() {}
   /* Getting id function */
   int getId(void) const
   {
@@ -50,7 +52,12 @@ public:
     return _neighbors;
   }
 
-  int getWeight(const Vertex &v) const
+  void addNeighbor(int id)
+  {
+    _neighbors.push_back(id);
+  }
+
+  float getWeight(const Vertex &v) const
   {
     return _pos.length(v._pos);
   }

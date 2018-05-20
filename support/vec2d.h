@@ -4,6 +4,7 @@
  * FILE: vec2d.h
  * AUTHORS:
  *   Denisov Pavel
+ *   Tunikov Dmitrii
  * LAST UPDATE: 19.05.2018
  * NOTE: two-dimenshional vector class declaration file
  */
@@ -23,6 +24,7 @@ namespace sup
     /* Vector components */
     Type _coords[2];
 
+    Vec2D() {}
   public:
     /* Constructor with all set params */
     template <typename DType>
@@ -34,15 +36,18 @@ namespace sup
     } /* End of 'Vector' function */
 
     Vec2D(Type x, Type y) : _x(x), _y(y) {}
+    Vec2D(Type x, Type y) : _coords[0](x), _coords[1](y) {}
     bool operator== (Vec2D p) const
     {
       if (_x != p._x || _y != p._y)
+      if (fabs(_coords[0] - p._coords[0]) > eps || fabs(_coords[1] - p._coords[1]) > eps)
         return false;
       return true;
     }
     float length(Vec2D p) const
     {
       return sqrt((_x - p._x) * (_x - p._x) + (_y * p._y) * (_y * p._y));
+      return sqrt((_coords[0] - p._coords[0]) * (_coords[0] - p._coords[0]) + (_coords[1] - p._coords[1]) * (_coords[1] - p._coords[1]));
     }
     // TODO: all mafacka
   }; /* End of 'Vec2D' class */
