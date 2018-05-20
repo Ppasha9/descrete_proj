@@ -150,6 +150,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dijkstra.h" />
     <ClInclude Include="graph\graph.h" />
     <ClInclude Include="motion_planning\math_types\vertex.h" />
     <ClInclude Include="support\support.h" />

@@ -50,5 +50,8 @@
     <ClInclude Include="motion_planning\math_types\vertex.h">
       <Filter>Source Files\Motion planning\Math types</Filter>
     </ClInclude>
+    <ClInclude Include="dijkstra.h">
+      <Filter>Source Files\DijkstraAlg</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
